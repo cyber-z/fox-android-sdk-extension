@@ -1,4 +1,4 @@
-[TOP](../../README.md)　>　[イベント計測の詳細](../../track_events/README.md)　>　Criteoのイベント計測
+[TOP](../../../README.md)　>　[イベント計測の詳細](../../README.md)　>　Criteoのイベント計測
 
 ---
 
@@ -319,6 +319,6 @@ JSONObject eventInfo = new JSONObject("{" +
 > ※ 商品購⼊イベントの price に⼊⼒する⾦額は必ず、Json データに指定した商品の総額 (price * quantity)となるよう指定してください。指定されていない場合、集計が正しく⾏われません。
 
 ---
-[戻る](../../track_events/README.md#cooperation_medias)
+[戻る](../../README.md#cooperation_medias)
 
-[トップ](../../README.md)
+[トップ](../../../README.md)

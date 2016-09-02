@@ -1,4 +1,4 @@
-[TOP](../../README.md)　>　[イベント計測の詳細](../../track_events/README.md)　>　DynalystGamesのイベント計測
+[TOP](../../../README.md)　>　[イベント計測の詳細](../../README.md)　>　DynalystGamesのイベント計測
 
 ---
 
@@ -220,6 +220,6 @@ FoxTrack.sendEvent(event);
 
 
 ---
-[戻る](../../track_events/README.md#cooperation_medias)
+[戻る](../../README.md#cooperation_medias)
 
-[トップ](../../README.md)
+[トップ](../../../README.md)

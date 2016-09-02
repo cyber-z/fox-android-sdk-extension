@@ -1,7 +1,12 @@
+[![Platform](http://img.shields.io/badge/platform-Android-green.svg?style=flat)](https://developer.android.com)
+[![Language](http://img.shields.io/badge/language-java-red.svg?style=flat)](https://java.com)
+[![F.O.X](http://img.shields.io/badge/F.O.X%20SDK-4.0.0%20〜-blue.svg?style=flat)](https://github.com/cyber-z/public-fox-android-sdk/blob/master/4.x/lang/ja/README.md)
+
 # Force Operation X Android SDK Extension
 
 本SDKは、Force Operation X Android SDKによる計測機能を拡張するためのプラグインモジュールとなります。<br>
-尚、本プラグインはオープンソースとなっておりますので改変頂いても構いません。
+利用するには[`F.O.X Android SDK 4.0.0`](https://github.com/cyber-z/public-fox-android-sdk/blob/master/4.x/lang/ja/README.md)以上を導入する必要があります。<br>
+尚、本プラグインはオープンソースとなっておりますので改変しご利用頂いても構いません。
 
 * **[1. サポートする機能](#support_functions)**
 * **[2. インストール](#install_module)**
@@ -29,9 +34,12 @@ repositories {
 }
 
 dependencies {
+    compile 'co.cyberz.fox:foxtrack-core:4.0.0'
     compile 'co.cyberz.fox.support:foxtrack-extension:1.0.0'
 }
 ```
+
+> ※ 本プラグインを利用するには`F.O.X Android SDK 4.0.0`以上が導入されていることが条件となります。
 
 <div id="event_extension"></div>
 ## 3. イベントの計測
