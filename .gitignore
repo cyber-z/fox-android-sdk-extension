@@ -29,6 +29,7 @@ gen-external-apklibs/
 
 # maven output folder
 target
+mavenRepo
 
 # Local setting file
 local.properties
