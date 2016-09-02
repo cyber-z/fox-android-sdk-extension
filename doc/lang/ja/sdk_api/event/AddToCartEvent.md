@@ -32,4 +32,4 @@ public class AddToCartEvent
 |AddToCartEvent|**addCriteoPartnerId** ( String id )<br><br>`id` : CriteoアカウントID|Criteoとの連携を行う際に必要となります。CriteoアカウントIDが同一アプリで異なる場合は入力してください。|
 
 ---
-[トップ](../../../README.md)
+[トップ](../../README.md)
