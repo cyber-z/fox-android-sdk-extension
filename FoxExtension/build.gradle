@@ -47,7 +47,7 @@ repositories {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'co.cyberz.fox:foxtrack-core:4.0.0'
+    compile 'co.cyberz.fox:track-core:4.0.0'
 }
 
 group = 'co.cyberz.fox.support'
@@ -63,7 +63,7 @@ uploadArchives {
                 }
             }
         }
-        pom.artifactId = "foxtrack-extension"
+        pom.artifactId = "track-event"
     }
 }
 
@@ -76,7 +76,7 @@ task copyJar(type:Copy, dependsOn:removeJar) {
     from('build/intermediates/bundles/release/')
     into('build/outputs/jar/')
     include('classes.jar')
-    rename('classes.jar', "FOX_Android_SDK_${version}_MiddleWareWrapper.jar")
+    rename('classes.jar', "FOX_Android_SDK_Support_Event_${version}.jar")
 }
 
 task assembleReleaseJar(dependsOn:copyJar) << {

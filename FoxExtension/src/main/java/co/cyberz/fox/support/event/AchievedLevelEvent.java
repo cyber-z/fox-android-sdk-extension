@@ -7,7 +7,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import co.cyberz.fox.support.event.media.IChartBoost;
-import co.cyberz.fox.support.util.StringUtil;
+import co.cyberz.util.string.StringUtil;
 
 /**
  * Created by Garhira on 16/07/23.
