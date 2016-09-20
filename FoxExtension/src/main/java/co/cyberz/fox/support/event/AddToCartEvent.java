@@ -28,7 +28,7 @@ public class AddToCartEvent extends FoxBaseExtensionEvent implements IVizury, ID
   }
 
   public AddToCartEvent addItemId(String id) {
-    this.label = id;
+    this.sku = id;
     addParam("item_id", id);
     return this;
   }

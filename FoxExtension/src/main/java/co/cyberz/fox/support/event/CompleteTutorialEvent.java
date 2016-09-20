@@ -24,7 +24,7 @@ public class CompleteTutorialEvent extends FoxBaseExtensionEvent {
   }
 
   public CompleteTutorialEvent addItemId(String itemId) {
-    this.label = itemId;
+    this.sku = itemId;
     addParam("item_id", itemId);
     return this;
   }
