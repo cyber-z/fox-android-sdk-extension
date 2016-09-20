@@ -9,7 +9,7 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-import co.cyberz.fox.support.util.StringUtil;
+import co.cyberz.util.string.StringUtil;
 
 
 /**

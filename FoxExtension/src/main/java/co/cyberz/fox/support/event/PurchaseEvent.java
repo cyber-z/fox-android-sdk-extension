@@ -17,7 +17,7 @@ import co.cyberz.fox.support.event.media.IDynalystCommerce;
 import co.cyberz.fox.support.event.media.IDynalystGames;
 import co.cyberz.fox.support.event.media.IDynamicRemarketing;
 import co.cyberz.fox.support.event.media.IVizury;
-import co.cyberz.fox.support.util.StringUtil;
+import co.cyberz.util.string.StringUtil;
 
 /**
  * Created by Garhira on 16/07/23.

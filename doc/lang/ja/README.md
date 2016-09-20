@@ -34,8 +34,8 @@ repositories {
 }
 
 dependencies {
-    compile 'co.cyberz.fox:foxtrack-core:4.0.0'
-    compile 'co.cyberz.fox.support:foxtrack-extension:1.0.0'
+    compile 'co.cyberz.fox:track-core:4.0.0'
+    compile 'co.cyberz.fox.support:track-event:1.0.0'
 }
 ```
 
