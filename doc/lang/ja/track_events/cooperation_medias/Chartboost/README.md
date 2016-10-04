@@ -25,8 +25,9 @@ import co.cyberz.fox.FoxTrack;
 import co.cyberz.fox.support.event.PurchaseEvent;
 ...
 
-PurchaseEvent event = new PurchaseEvent(12345, itemName, 250, "JPY", 1, sku);
+PurchaseEvent event = new PurchaseEvent(12345, null, 250, "JPY", 1, sku);
 event.addUserId("USER_A001")
+     .addProduct("itemName", null, null, 0, 0);
      .addLocalizedTitle("XXXXX")
      .addLocalizedDescription("XXXXXX")
      .addReceiptValid(false)
