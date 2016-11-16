@@ -119,12 +119,12 @@ Fox.trackEvent(event);
 
 > #### ・[Facebook](./cooperation_medias/Facebook/README.md)
 > #### ・[Twitter](./cooperation_medias/Twitter/README.md)
-> #### ・[Chartboost](../cooperation_medias/Chartboost/README.md)
-> #### ・[Criteo](../cooperation_medias/Criteo/README.md)
-> #### ・[DynalystCommerce](../cooperation_medias/DynalystCommerce/README.md)
-> #### ・[DynalystGames](../cooperation_medias/DynalystGames/README.md)
-> #### ・[DynamicRemarketing](../cooperation_medias/DynamicRemarketing/README.md)
-> #### ・[Vizury](../cooperation_medias/Vizury/README.md)
+> #### ・[Chartboost](./cooperation_medias/Chartboost/README.md)
+> #### ・[Criteo](./cooperation_medias/Criteo/README.md)
+> #### ・[DynalystCommerce](./cooperation_medias/DynalystCommerce/README.md)
+> #### ・[DynalystGames](./cooperation_medias/DynalystGames/README.md)
+> #### ・[DynamicRemarketing](./cooperation_medias/DynamicRemarketing/README.md)
+> #### ・[Vizury](./cooperation_medias/Vizury/README.md)
 
 ---
 [トップ](../README.md)
