@@ -117,6 +117,8 @@ Fox.trackEvent(event);
 
 **[媒体別実装方法]**
 
+> #### ・[Facebook](../cooperation_medias/Facebook/README.md)
+> #### ・[Twitter](../cooperation_medias/Twitter/README.md)
 > #### ・[Chartboost](../cooperation_medias/Chartboost/README.md)
 > #### ・[Criteo](../cooperation_medias/Criteo/README.md)
 > #### ・[DynalystCommerce](../cooperation_medias/DynalystCommerce/README.md)
