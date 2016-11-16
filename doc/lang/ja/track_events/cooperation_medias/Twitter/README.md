@@ -1,10 +1,10 @@
-[TOP](../../../README.md)　>　[イベント計測の詳細](../../README.md)　>　Facebookのイベント計測
+[TOP](../../../README.md)　>　[イベント計測の詳細](../../README.md)　>　Twitterのイベント計測
 
 ---
 
-# Facebookのイベント計測
+# Twitterのイベント計測
 
-Facebookにおけるイベント計測は以下の5つとなっています。
+Twitterにおけるイベント計測は以下の5つとなっています。
 
 * [1. View Product（商品閲覧イベント）実装方法](#view_content)
 * [2. View Basket（買い物かご）実装方法](#add_to_cart)
@@ -61,6 +61,19 @@ event.addUserId("USER_A001")
      .addProduct("3456", null, null, 200, 2)
      .addProduct("6789", null, null, 300, 3);
 FoxTrack.sendEvent(event);
+```
+
+上記の実装で以下のJSON情報を生成し送信します。
+
+```java
+JSONObject eventInfo = new JSONObject("{" +
+                                 "'fox_cvpoint':12345," +
+                                 "'product':[" +
+                                            "{'id':'1234','price':100,'quantity':1}," +
+                                            "{'id':'3456','price':200,'quantity':2}," +
+                                            "{'id':'6789','price':300,'quantity':3}" +
+                                           "]," +
+                                 "}");
 ```
 
 ### 2.2 イベント情報詳細
