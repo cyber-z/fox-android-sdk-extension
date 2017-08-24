@@ -28,7 +28,9 @@
 
 ## 2. インストール
 
-build.gradleに以下の依存設定を追加します。
+build.gradleに以下の依存設定を追加します。<br>
+※ 本プラグインを利用するには`F.O.X Android SDK 4.0.0`以上が導入されていることが条件となります。
+
 
 #### 共通設定
 ```
@@ -79,8 +81,6 @@ dependencies {
 }
 ```
 
-
-> ※ 本プラグインを利用するには`F.O.X Android SDK 4.0.0`以上が導入されていることが条件となります。
 
 <div id="event_extension"></div>
 
