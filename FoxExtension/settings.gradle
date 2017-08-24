@@ -1,1 +1,1 @@
-include ':app', 'supportevents', ':supportids'
+include ':app', 'supportEvents', ':supportUtil', ':supportCocos2dx', ':supportUnity', ':supportUE'

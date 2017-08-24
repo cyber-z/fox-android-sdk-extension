@@ -12,9 +12,6 @@ android {
         versionCode 1
         versionName "1.0"
     }
-    lintOptions {
-        abortOnError false
-    }
     buildTypes {
         release {
             minifyEnabled false
@@ -28,7 +25,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.android.tools.build:gradle:2.1.3'
     }
 }
 
@@ -47,6 +44,7 @@ repositories {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
+    provided 'com.android.support:appcompat-v7:26.+'
     provided 'co.cyberz.fox:track-core:4.2.1'
 }
 
@@ -63,7 +61,7 @@ uploadArchives {
                 }
             }
         }
-        pom.artifactId = "track-event"
+        pom.artifactId = "track-unity"
     }
 }
 
@@ -76,7 +74,7 @@ task copyJar(type:Copy, dependsOn:removeJar) {
     from('build/intermediates/bundles/release/')
     into('build/outputs/jar/')
     include('classes.jar')
-    rename('classes.jar', "FOX_Android_SDK_Support_Event_${version}.jar")
+    rename('classes.jar', "FOX_Android_SDK_Support_Unity_${version}.jar")
 }
 
 task assembleReleaseJar(dependsOn:copyJar) << {

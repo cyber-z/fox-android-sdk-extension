@@ -12,9 +12,6 @@ android {
         versionCode 1
         versionName "1.0"
     }
-    lintOptions {
-        abortOnError false
-    }
     buildTypes {
         release {
             minifyEnabled false
@@ -28,7 +25,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.android.tools.build:gradle:2.1.3'
     }
 }
 
@@ -51,7 +48,7 @@ dependencies {
 }
 
 group = 'co.cyberz.fox.support'
-version = '1.0.0'
+version = '1.0.2'
 
 uploadArchives {
     repositories.mavenDeployer {
@@ -63,7 +60,7 @@ uploadArchives {
                 }
             }
         }
-        pom.artifactId = "track-event"
+        pom.artifactId = "track-cocos2dx"
     }
 }
 
@@ -76,7 +73,7 @@ task copyJar(type:Copy, dependsOn:removeJar) {
     from('build/intermediates/bundles/release/')
     into('build/outputs/jar/')
     include('classes.jar')
-    rename('classes.jar', "FOX_Android_SDK_Support_Event_${version}.jar")
+    rename('classes.jar', "FOX_Android_SDK_Support_Cocos2dx_${version}.jar")
 }
 
 task assembleReleaseJar(dependsOn:copyJar) << {

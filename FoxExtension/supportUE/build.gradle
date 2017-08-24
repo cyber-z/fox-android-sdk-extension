@@ -11,9 +11,9 @@ android {
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
-    }
-    lintOptions {
-        abortOnError false
+
+//        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
     }
     buildTypes {
         release {
@@ -28,7 +28,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.android.tools.build:gradle:2.1.3'
     }
 }
 
@@ -63,7 +63,7 @@ uploadArchives {
                 }
             }
         }
-        pom.artifactId = "track-event"
+        pom.artifactId = "track-ue"
     }
 }
 
@@ -76,7 +76,7 @@ task copyJar(type:Copy, dependsOn:removeJar) {
     from('build/intermediates/bundles/release/')
     into('build/outputs/jar/')
     include('classes.jar')
-    rename('classes.jar', "FOX_Android_SDK_Support_Event_${version}.jar")
+    rename('classes.jar', "FOX_Android_SDK_Support_UE_${version}.jar")
 }
 
 task assembleReleaseJar(dependsOn:copyJar) << {

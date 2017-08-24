@@ -3,7 +3,7 @@ apply plugin: 'maven'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion '26.0.0'
+    buildToolsVersion "26.0.0"
     publishNonDefault false
 
     defaultConfig {
@@ -11,6 +11,9 @@ android {
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
     }
     lintOptions {
         abortOnError false
@@ -23,31 +26,13 @@ android {
     }
 }
 
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
-    }
-}
-
-allprojects {
-    repositories {
-        jcenter()
-    }
-}
-
-repositories {
-    maven {
-        url "https://github.com/cyber-z/public-fox-android-sdk/raw/master/mavenRepo"
-    }
-}
-
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.+'
     testCompile 'junit:junit:4.12'
-    provided 'co.cyberz.fox:track-core:4.2.1'
 }
 
 group = 'co.cyberz.fox.support'
@@ -63,7 +48,7 @@ uploadArchives {
                 }
             }
         }
-        pom.artifactId = "track-event"
+        pom.artifactId = "util"
     }
 }
 
@@ -76,7 +61,7 @@ task copyJar(type:Copy, dependsOn:removeJar) {
     from('build/intermediates/bundles/release/')
     into('build/outputs/jar/')
     include('classes.jar')
-    rename('classes.jar', "FOX_Android_SDK_Support_Event_${version}.jar")
+    rename('classes.jar', "FOX_Android_SDK_Support_Utility_${version}.jar")
 }
 
 task assembleReleaseJar(dependsOn:copyJar) << {
