@@ -74,7 +74,7 @@ dependencies {
 
 <div id="supportutil"></div>
 
-### 2.4 supportUtil
+### 2.5 supportUtil
 
 **Dependency**
 ```
