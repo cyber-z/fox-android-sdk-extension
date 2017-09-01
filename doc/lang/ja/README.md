@@ -1,6 +1,6 @@
 [![Platform](http://img.shields.io/badge/platform-Android-green.svg?style=flat)](https://developer.android.com)
 [![Language](http://img.shields.io/badge/language-java-red.svg?style=flat)](https://java.com)
-[![F.O.X](http://img.shields.io/badge/F.O.X%20SDK-4.0.0%20〜-blue.svg?style=flat)](https://github.com/cyber-z/public-fox-android-sdk/blob/master/4.x/lang/ja/README.md)
+[![F.O.X](http://img.shields.io/badge/F.O.X%20SDK-4.0.0%20+-blue.svg?style=flat)](https://github.com/cyber-z/public-fox-android-sdk/blob/master/4.x/lang/ja/README.md)
 
 # Force Operation X Android SDK Extension
 
@@ -10,7 +10,7 @@
 
 * **[1. サポートする機能](#support_functions)**
 * **[2. インストール](#install_module)**
-* **[3. イベントの計測](#event_extension)**
+* **[3. アプリ内イベントの計測](#event_extension)**
 
 <div id="support_functions"></div>
 
@@ -84,7 +84,7 @@ dependencies {
 
 <div id="event_extension"></div>
 
-## 3. イベントの計測
+## 3. アプリ内イベントの計測
 
 本プラグインでは、アプリ内で発生する各種イベント別に必要となる計測パラメータの指定を<br>
 簡易化するためのイベント拡張クラスを用意しています。<br>
