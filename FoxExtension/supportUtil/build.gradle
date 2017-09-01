@@ -1,0 +1,69 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+    publishNonDefault false
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    lintOptions {
+        abortOnError false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.+'
+    testCompile 'junit:junit:4.12'
+}
+
+group = 'co.cyberz.fox.support'
+version = '1.0.0'
+
+uploadArchives {
+    repositories.mavenDeployer {
+        repository(url: "file:${projectDir}/mavenRepo")
+        pom.project {
+            licenses {
+                license {
+                    name "Copyright © CyberZ, inc. All Rights Reserved."
+                }
+            }
+        }
+        pom.artifactId = "util"
+    }
+}
+
+task removeJar(type:Delete) {
+    delete fileTree(dir:'build/outputs/jar/', include:("*"))
+}
+
+
+task copyJar(type:Copy, dependsOn:removeJar) {
+    from('build/intermediates/bundles/release/')
+    into('build/outputs/jar/')
+    include('classes.jar')
+    rename('classes.jar', "FOX_Android_SDK_Support_Utility_${version}.jar")
+}
+
+task assembleReleaseJar(dependsOn:copyJar) << {
+    println("assemble jar : " + copyJar.destinationDir)
+}
