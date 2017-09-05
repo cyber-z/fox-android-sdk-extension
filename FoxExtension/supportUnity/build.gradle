@@ -71,7 +71,7 @@ task removeJar(type:Delete) {
 
 
 task copyJar(type:Copy, dependsOn:removeJar) {
-    from('build/intermediates/bundles/release/')
+    from('build/intermediates/bundles/default/')
     into('build/outputs/jar/')
     include('classes.jar')
     rename('classes.jar', "FOX_Android_SDK_Support_Unity_${version}.jar")
