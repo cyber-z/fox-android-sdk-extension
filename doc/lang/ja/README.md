@@ -53,7 +53,7 @@ dependencies {
 ```
 dependencies {
     compile 'co.cyberz.fox:track-core:4.x.x'
-    compile `co.cyberz.fox.support:track-cocos2dx:1.X.X`
+    compile 'co.cyberz.fox.support:track-cocos2dx:1.X.X'
 }
 ```
 
@@ -61,7 +61,7 @@ dependencies {
 ```
 dependencies {
     compile 'co.cyberz.fox:track-core:4.x.x'
-    compile `co.cyberz.fox.support:track-unity:1.X.X`
+    compile 'co.cyberz.fox.support:track-unity:1.X.X'
 }
 ```
 
@@ -69,7 +69,7 @@ dependencies {
 ```
 dependencies {
     compile 'co.cyberz.fox:track-core:4.x.x'
-    compile `co.cyberz.fox.support:track-ue:1.X.X`
+    compile 'co.cyberz.fox.support:track-ue:1.X.X'
 }
 ```
 
@@ -77,7 +77,7 @@ dependencies {
 ```
 dependencies {
     compile 'co.cyberz.fox:track-core:4.x.x'
-    compile `co.cyberz.fox.support:util:1.X.X`
+    compile 'co.cyberz.fox.support:util:1.X.X'
 }
 ```
 
