@@ -25,8 +25,9 @@ import co.cyberz.fox.FoxTrack;
 import co.cyberz.fox.support.event.PurchaseEvent;
 ...
 
-PurchaseEvent event = new PurchaseEvent(12345, itemName, 250, "JPY", 1, sku);
+PurchaseEvent event = new PurchaseEvent(12345, null, 250, "JPY", 1, sku);
 event.addUserId("USER_A001")
+     .addProduct("XXXXX", null, null, 0, 0)
      .addLocalizedTitle("XXXXX")
      .addLocalizedDescription("XXXXXX")
      .addReceiptValid(false)
@@ -74,6 +75,7 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 |price|double|(必須)価格|
 |quantity|int|(必須)個数|
 |currency|String|(必須)通貨<br>[`ISO 4217`](http://ja.wikipedia.org/wiki/ISO_4217)で定義された通貨コードを指定してください。|
+|product.id|String|(必須)購入アイテムの一意の識別子|
 |localizeTitle|String|購入アイテムの名称|
 |localizeDescription|String|購入アイテムの説明|
 |receiptValid|boolean|Receiptの妥当性判定を実施有無|
